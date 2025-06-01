@@ -1,21 +1,21 @@
 import QtQuick 2.15
+import QtPositioning
 
 Item {
     width: 300
-    height: 300
+    height: 355
     clip: true
 
     property double heading: 0
     property double bugValue: 0
 
-    CustomImage {
-        id: back
+    Rectangle {
+        id: fade
         x: 0
         y: 210
-        height: 90
-        source: "qrc:/Resources/Images/eadi/eadi_hsi_back.svg"
-        sourceSize.height: 450
-        sourceSize.width: 1500
+        width: 300
+        height: 145
+        color: "#505050"
     }
 
     CustomImage {
@@ -37,6 +37,16 @@ Item {
             }
             angle: -heading
         }
+    }
+
+    CustomImage {
+        id: back
+        x: 0
+        y: 210
+        height: 145
+        source: "qrc:/Resources/Images/eadi/eadi_hsi_back.svg"
+        sourceSize.height: 725
+        sourceSize.width: 1500
     }
 
     CustomImage {

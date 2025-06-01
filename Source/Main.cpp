@@ -36,16 +36,16 @@ int main(int argc, char *argv[])
         },
         Qt::QueuedConnection);
 
-    const QUrl url3(QStringLiteral("qrc:/Qml/Misc.qml"));
-    QObject::connect(
-        &engine,
-        &QQmlApplicationEngine::objectCreated,
-        &app,
-        [url3](QObject *obj, const QUrl &objUrl) {
-            if (!obj && url3 == objUrl)
-                QCoreApplication::exit(-1);
-        },
-        Qt::QueuedConnection);
+    // const QUrl url3(QStringLiteral("qrc:/Qml/Misc.qml"));
+    // QObject::connect(
+    //     &engine,
+    //     &QQmlApplicationEngine::objectCreated,
+    //     &app,
+    //     [url3](QObject *obj, const QUrl &objUrl) {
+    //         if (!obj && url3 == objUrl)
+    //             QCoreApplication::exit(-1);
+    //     },
+    //     Qt::QueuedConnection);
 
     PrimaryFlightData *pfd = new PrimaryFlightData;
     Animation *animation = new Animation;
@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("pfd", pfd);
     engine.load(url1);
     engine.load(url2);
-    engine.load(url3);
+    // engine.load(url3);
 
     animation->init();
 

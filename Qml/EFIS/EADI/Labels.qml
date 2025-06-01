@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Item {
     width: 300
-    height: 300
+    height: 340
 
     property double airspeedBug: 0
     property double machNumber: 0

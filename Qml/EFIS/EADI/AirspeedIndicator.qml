@@ -65,8 +65,10 @@ Item {
 
             ctx.scale(scaleRatio, scaleRatio)
 
-            ctx.fillStyle = "#343434"
+            ctx.globalAlpha = 0.4
+            ctx.fillStyle = "#000000"
             ctx.fillRect(0, 0, 36, 175)
+            ctx.globalAlpha = 1
 
             ctx.translate(0, airspeed * pixelPerSpeed)
 

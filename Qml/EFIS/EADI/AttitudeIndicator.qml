@@ -54,16 +54,16 @@ Item {
 
     CustomImage {
         id: back
-        x: 45
+        x: 45 - 105
         y: -85
-        width: 210
+        width: 420
         height: 420
         source: "qrc:/Resources/Images/eadi/eadi_adi_back.svg"
         sourceSize.height: 1680
         sourceSize.width: 840
         transform: [
             Rotation {
-                origin.x: (150 - 45)
+                origin.x: (150 - 45 + 105)
                 origin.y: (125 + 85)
                 axis {
                     x: 0
@@ -109,14 +109,14 @@ Item {
     CustomImage {
         id: rollMask
         x: 45
-        y: 20
+        y: -180
         width: 210
         source: "qrc:/Resources/Images/eadi/eadi_adi_roll.svg"
         sourceSize.height: 840
         sourceSize.width: 840
         transform: Rotation {
             origin.x: (150 - 45)
-            origin.y: (125 - 20)
+            origin.y: (125 + 180)
             axis {
                 x: 0
                 y: 0

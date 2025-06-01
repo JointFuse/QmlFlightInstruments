@@ -8,7 +8,7 @@
    version="1.1"
    id="svg2"
    height="420"
-   width="210">
+   width="420">
   <defs
      id="defs4" />
   <metadata
@@ -32,21 +32,21 @@
       <rect
          style="fill:#0080ff;fill-opacity:1;stroke:none"
          id="rect4909-0"
-         width="210"
+         width="420"
          height="210"
          x="-419.56918"
          y="628.47131" />
       <rect
          style="fill:#804000;fill-opacity:1;stroke:none"
          id="rect4909-6-8"
-         width="210"
+         width="420"
          height="210"
          x="-419.56918"
          y="838.47131" />
       <rect
          style="fill:#ffffff;fill-opacity:1;stroke:none"
          id="rect4307-3"
-         width="210"
+         width="420"
          height="1"
          x="-419.56918"
          y="-838.97131"

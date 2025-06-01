@@ -31,7 +31,7 @@ Window {
 
             Rectangle {
                 width: 310
-                height: 310
+                height: 365
                 radius: 6
                 color: "#000000"
 

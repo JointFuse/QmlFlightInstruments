@@ -3,7 +3,7 @@ import QtQuick 2.0
 Item {
     id: root
     width: 300
-    height: 300
+    height: 355
 
     property double scaleRatio: 1
 
@@ -55,37 +55,37 @@ Item {
         y: 0
     }
 
-    Rectangle {
-        id: maskTop
-        x: 0
-        y: 0
-        width: 300
-        height: 6
-        color: "#000000"
-    }
+    // Rectangle {
+    //     id: maskTop
+    //     x: 0
+    //     y: 0
+    //     width: 300
+    //     height: 6
+    //     color: "#000000"
+    // }
 
-    Rectangle {
-        id: maskLeft
-        x: 0
-        y: 0
-        width: 6
-        height: 300
-        color: "#000000"
-    }
+    // Rectangle {
+    //     id: maskLeft
+    //     x: 0
+    //     y: 0
+    //     width: 6
+    //     height: 300
+    //     color: "#000000"
+    // }
 
-    Rectangle {
-        id: maskRight
-        x: 296
-        y: 0
-        width: 4
-        height: 300
-        color: "#000000"
-    }
+    // Rectangle {
+    //     id: maskRight
+    //     x: 296
+    //     y: 0
+    //     width: 4
+    //     height: 300
+    //     color: "#000000"
+    // }
 
     Rectangle {
         id: maskBottom
         x: 0
-        y: 290
+        y: 345
         width: 300
         height: 10
         color: "#000000"

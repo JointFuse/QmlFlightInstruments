@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Item {
     width: 300
-    height: 300
+    height: 340
 
     property double scaleRatio: 1
 
@@ -55,8 +55,10 @@ Item {
 
             ctx.scale(scaleRatio, scaleRatio)
 
+            //
+            ctx.globalAlpha = 0.4
             // Back
-            ctx.fillStyle = "#343434"
+            ctx.fillStyle = "#000000"
             ctx.fillRect(0, 0, 36, 175)
 
             ctx.translate(0, altitude * pixelPerAltitude)
@@ -64,6 +66,8 @@ Item {
             // Ground
             ctx.fillStyle = "#402000"
             ctx.fillRect(0, 0.5 * 175, 36, 0.5 * 175)
+            //
+            ctx.globalAlpha = 1
 
             // White tickmarks
             ctx.strokeStyle = "#ffffff"
